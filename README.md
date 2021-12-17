@@ -13,6 +13,7 @@ It is my big homework.
 -	登录界面
 - 注册界面
 - 找回密码界面
+
 同时，登录界面内有如下的登录功能：
 - 账号密码登录
 - 邮箱验证码登录
@@ -24,6 +25,6 @@ It is my big homework.
 
 后端：Flask框架，pymysql库，aip库
 
-fore-end-code文件夹为前端代码
+- fore-end-code文件夹为前端代码
 
-back-end-code文件夹为后端代码
+- back-end-code文件夹为后端代码
