@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet"href="./swiper/swiper-bundle.min.css"/>
+	
+    <title>高端的登录界面</title>
+	
+</head>
+<body>
+    <!-- <img src="img/bg.jpg" alt="" class="wave"> -->
+
+	<!-- Swiper -->
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<!-- part 1 -->
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="img">
+						<img src="img/img-3.svg0" alt="">
+					</div>
+					<div class="login-box">
+						<form>
+							<!-- <img src="img/avatar.svg" alt="" class="avatar"> -->
+							<img src="img/avatar.svg" alt="" class="avatar" onclick="location.href='register.html';">
+							<h2>高端的登录模块</h2>
+							<div class="input-group">
+								<div class="icon">
+									<i class="fa fa-user"></i>
+								</div>
+								<div>
+									<h5>您的各种号码</h5>
+									<input id="user" type="text" class="input">
+								</div>
+							</div>
+							<div class="input-group">
+								<div class="icon">
+									<i class="fa fa-lock"></i>
+								</div>
+								<div>
+									<h5>密码</h5>
+									<input id="stupwd"type="password" class="input">
+								</div>
+							</div>
+							<a id="other">换种方式？</a>
+							<a id="forget" href="findpwd.html">忘记密码?</a>
+							<br />
+							
+							<button id="login" type="button" class="btn">登录</button>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- part 2 -->
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="img">
+						<img src="img/img-3.svg0" alt="">
+					</div>
+					<div class="login-box">
+						<form>
+							<img src="img/avatar.svg" alt="" class="avatar" onclick="location.href='register.html';">
+							<h2>高端验证码登录</h2>
+							<div class="input-group">
+								<div class="icon">
+									<i class="fa fa-user"></i>
+								</div>
+								<div>
+									<h5>您的各种号码</h5>
+									<input id="user2" type="text" class="input">
+								</div>
+							</div>
+							<div class="input-group">
+								<div class="icon">
+									<i class="fa fa-lock"></i>
+								</div>
+								<div>
+									<h5>验证码</h5>
+									<input id="ver_code2" type="text" class="input">
+									<button id="sendcode2" type="button" class="btn0">发送验证码</button>
+								</div>
+							</div>
+							<a id="other2">换种方式？</a>
+							<a id="forget" href="findpwd.html">忘记密码?</a>
+							<br />
+							
+							<button id="login2" type="button" class="btn">登录</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- part 3 -->
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="img">
+						<img src="img/img-3.svg0" alt="">
+					</div>
+					<div class="login-box">
+						
+						
+						<form>
+							<img src="img/avatar.svg" alt="" class="avatar" onclick="location.href='register.html';">
+							<h2>高端的人脸登录</h2>
+							<div id="main" style="margin-left:10px;	">
+								<video id="video" style="width:250px;height:250px;border:5px solid black;border-radius: 100%;"></video>
+								<!-- <img id="picture" style="width:250px;height:250px;border:5px solid black;"> -->
+								<canvas id="canvas" style="display: none;width:250px;height:250px"></canvas>
+								
+								<button type="button" class="btn1" onclick="cameraForm.open()">点击开始识别</button>
+								<!-- <button id="facelogin" class="btn" type="button" onclick="cameraForm.save()">点击登录</button> -->
+								<!-- <button type="button" onclick="cameraForm.close()">关闭摄像头</button> -->
+							</div>
+							
+							<a id="other3">换种方式？</a>
+							<a id="forget" href="findpwd.html">忘记密码?</a>
+							<br />
+							
+							
+							<button id="facelogin" type="button" class="btn" onclick="cameraForm.save()">登录</button>
+
+						</form>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- part end -->
+		</div>
+		
+		<!-- <div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div> -->
+	</div>
+
+
+	
+	
+	<a href="https://teemos.justwalking.cn" target="_blank" class="copyright">&copy; Teemos</a>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+	<script src="js/face2.js" type="text/javascript"></script>
+	
+	
+	
+	<!-- Swiper JS -->
+	    <script src="./swiper/swiper-bundle.min.js"></script>
+	
+	    <!-- Initialize Swiper -->
+	    <script>
+	       var swiper = new Swiper(".mySwiper", {
+						// loop:true,
+						initialSlide: 2,
+						noSwipingSelector: '.container',
+						speed:600,
+
+				
+				   navigation: {
+				             nextEl: "#other",
+				           },
+						   
+	             });
+				$('#other2').click(function(){
+				    swiper.slideTo(2, 600, false);//切换到第一个slide，速度为1秒
+				  })
+				 $('#other3').click(function(){
+				     swiper.slideTo(0, 1000, false);//切换到第一个slide，速度为1秒
+				   })
+	    </script>
+</body>
+</html>
