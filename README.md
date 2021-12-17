@@ -23,3 +23,7 @@ It is my big homework.
 前端：bootstrap框架，swpier滑动插件，Ajax
 
 后端：Flask框架，pymysql库，aip库
+
+fore-end-code文件夹为前端代码
+
+back-end-code文件夹为后端代码
