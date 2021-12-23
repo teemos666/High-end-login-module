@@ -1,5 +1,5 @@
 # High-end-login-module
-It is my big homework.
+It is my original big homework.
 
 所需环境：
 -	Apache 2.4.6
@@ -28,3 +28,17 @@ It is my big homework.
 - fore-end-code文件夹为前端代码
 
 - back-end-code文件夹为后端代码
+
+# 效果图
+
+![1](README/1.jpg)
+
+![2](README/2.jpg)
+
+![3](README/3.jpg)
+
+![4](README/4.jpg)
+
+![5](README/5.jpg)
+
+![6](README/6.jpg)
